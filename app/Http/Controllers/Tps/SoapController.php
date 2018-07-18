@@ -20,9 +20,9 @@ class SoapController extends DefaultController {
     public function __construct() {
         
         $this->wsdl = 'https://tpsonline.beacukai.go.id/tps/service.asmx?WSDL';
-        $this->user = 'TRMA';
-        $this->password = 'TRMA12345678';
-        $this->kode = 'TRMA';
+        $this->user = 'PTSG';
+        $this->password = 'PTSG12345678';
+        $this->kode = 'PTSG';
         
     }
     

@@ -28,7 +28,7 @@
             <td style="text-align: center;">REKAPITULASI PENGIRIMAN NOTA TAGIHAN</td>
         </tr>
         <tr>
-            <td style="text-align: center;">Biaya Penumpukan Barang LCL ({{ $invoices['0']->INVOICE }}) Gudang Lautan Tirta Transportama</td>
+            <td style="text-align: center;">Biaya Penumpukan Barang LCL ({{ $invoices['0']->INVOICE }}) Gudang PT. Sarana Gemilang</td>
         </tr>
         <tr>
             <td style="text-align: center;">Tanggal : {{ date('d F Y', strtotime($invoices['0']->tglrelease)) }}</td>

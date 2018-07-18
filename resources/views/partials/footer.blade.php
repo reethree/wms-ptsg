@@ -3,5 +3,5 @@
 <div class="pull-right hidden-xs">
   <b>Version</b> 1.0.0
 </div>
-<strong>Copyright &copy {{date('Y')}} PT. Lautan Tirta Transportama.</strong> All rights reserved.   
+<strong>Copyright &copy {{date('Y')}} PT. Sarana Gemilang.</strong> All rights reserved.   
 </footer>

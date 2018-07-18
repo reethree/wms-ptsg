@@ -165,9 +165,9 @@
         </table>
     </div>
     <div>
-        <p style="font-size: 10px;">
+<!--        <p style="font-size: 10px;">
             Pembayaran harus ditransfer ke Lautan Tirta Transportama <b>IDR : 007.30.15283</b> a/n Lautan Tirta Transportama. BCA Jl. Yos Sudarso 14 dan bukti pembayaran di-fax ke: 4394558 <b>ATTN: {{$rekap->officer}}</b>
-        </p>
+        </p>-->
     </div>
 </div>
 @stop

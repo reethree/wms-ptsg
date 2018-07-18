@@ -199,7 +199,7 @@
                 <tr>
                     <td><b>TPS</b></td>
                     <td><b>&nbsp;&nbsp;=&nbsp;&nbsp;</b></td>
-                    <td><b>Lautan Tirta Transportama</b></td>
+                    <td><b>PT. Sarana Gemilang</b></td>
                 </tr>
             </table>
         </div>

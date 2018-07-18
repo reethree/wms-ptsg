@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Email Report Gateout FCL - Lautan Tirta Transportama</title>
+        <title>Email Report Gateout FCL - PT. Sarana Gemilang</title>
         <style>
             body{
                 background:#f2f2f2;
@@ -31,7 +31,7 @@
 
                 <p>Bersama Email ini kami lampirkan data Gate Out FCL Tanggal {{date('d F Y', strtotime($data->tgl_laporan))}}.</p><br />
                 
-                <p><strong>Nama Depo : Lautan Tirta Transportama</strong></p>
+                <p><strong>Nama Depo : PT. Sarana Gemilang</strong></p>
                 <table border="1" cellpadding="10" cellspacing="0" width="100%" id="emailBody">
                     <tr>
                         <th>No. Container</th>
@@ -66,7 +66,7 @@
                 <p>Salam hormat,</p>
 <!--                <img src="{{ asset('assets/images/primanata-logo.png') }}" alt="" style="width: 200px;" />
                 <p>
-                    <h3 style="margin: 0;">Team Lautan Tirta Transportama</h3><br />
+                    <h3 style="margin: 0;">Team PT. Sarana Gemilang</h3><br />
                     Jl. Enggano No. 40 E<br />
                     Tanjung Priok, Jakarta Utara<br />
                     Tlp : 021-43909873<br />

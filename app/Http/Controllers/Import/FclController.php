@@ -224,7 +224,7 @@ class FclController extends Controller
 //        $spk_last_id = $this->getSpkNumber();
         $regID = str_pad(intval((isset($spk_last_id->id) ? $spk_last_id->id : 0)+1), 4, '0', STR_PAD_LEFT);
         
-        $data['spk_number'] = 'TRMAL'.$regID.'/'.date('y');
+        $data['spk_number'] = 'PTSGL'.$regID.'/'.date('y');
         $data['consolidators'] = DBConsolidator::select('TCONSOLIDATOR_PK as id','NAMACONSOLIDATOR as name')->get();
         $data['countries'] = DBNegara::select('TNEGARA_PK as id','NAMANEGARA as name')->get();
         $data['perusahaans'] = DBPerusahaan::select('TPERUSAHAAN_PK as id','NAMAPERUSAHAAN as name')->get();
@@ -751,7 +751,7 @@ class FclController extends Controller
 	$insert->TGL_PLP = $data['TGL_PLP'];
 	$insert->NO_PLP = $data['NO_PLP'];
         $insert->KD_TPS_ASAL = $data['KD_TPS_ASAL'];
-        $insert->KD_TPS_TUJUAN = 'TRMA';
+        $insert->KD_TPS_TUJUAN = 'PTSG';
         $insert->NOCONTAINER = $data['NO_CONT'];
         $insert->SIZE = $data['UK_CONT'];
         $insert->TYPE = $data['TYPE'];
@@ -1043,12 +1043,12 @@ class FclController extends Controller
                 $coaricontdetail->TPSCOARICONTXML_FK = $coaricont->TPSCOARICONTXML_PK;
                 $coaricontdetail->REF_NUMBER = $reff_number;
                 $coaricontdetail->KD_DOK = 5;
-                $coaricontdetail->KD_TPS = 'TRMA';
+                $coaricontdetail->KD_TPS = 'PTSG';
                 $coaricontdetail->NM_ANGKUT = (!empty($container->VESSEL) ? $container->VESSEL : 0);
                 $coaricontdetail->NO_VOY_FLIGHT = (!empty($container->VOY) ? $container->VOY : 0);
                 $coaricontdetail->CALL_SIGN = (!empty($container->CALL_SIGN) ? $container->CALL_SIGN : 0);
                 $coaricontdetail->TGL_TIBA = (!empty($container->ETA) ? date('Ymd', strtotime($container->ETA)) : '');
-                $coaricontdetail->KD_GUDANG = 'TRMA';
+                $coaricontdetail->KD_GUDANG = 'PTSG';
                 $coaricontdetail->NO_CONT = $container->NOCONTAINER;
                 $coaricontdetail->UK_CONT = $container->SIZE;
                 $coaricontdetail->NO_SEGEL = $container->NO_SEAL;
@@ -1075,7 +1075,7 @@ class FclController extends Controller
                 $coaricontdetail->PEL_MUAT = $container->PEL_MUAT;
                 $coaricontdetail->PEL_TRANSIT = $container->PEL_TRANSIT;
                 $coaricontdetail->PEL_BONGKAR = $container->PEL_BONGKAR;
-                $coaricontdetail->GUDANG_TUJUAN = 'TRMA';
+                $coaricontdetail->GUDANG_TUJUAN = 'PTSG';
                 $coaricontdetail->UID = \Auth::getUser()->name;
                 $coaricontdetail->NOURUT = 1;
                 $coaricontdetail->RESPONSE = '';
@@ -1148,12 +1148,12 @@ class FclController extends Controller
                 $codecocontdetail->REF_NUMBER = $reff_number;
                 $codecocontdetail->NOJOBORDER = $container->NoJob;
                 $codecocontdetail->KD_DOK = 6;
-                $codecocontdetail->KD_TPS = 'TRMA';
+                $codecocontdetail->KD_TPS = 'PTSG';
                 $codecocontdetail->NM_ANGKUT = (!empty($container->VESSEL) ? $container->VESSEL : 0);
                 $codecocontdetail->NO_VOY_FLIGHT = (!empty($container->VOY) ? $container->VOY : 0);
                 $codecocontdetail->CALL_SIGN = (!empty($container->CALLSIGN) ? $container->CALLSIGN : 0);
                 $codecocontdetail->TGL_TIBA = (!empty($container->ETA) ? date('Ymd', strtotime($container->ETA)) : '');
-                $codecocontdetail->KD_GUDANG = 'TRMA';
+                $codecocontdetail->KD_GUDANG = 'PTSG';
                 $codecocontdetail->NO_CONT = $container->NOCONTAINER;
                 $codecocontdetail->UK_CONT = $container->SIZE;
                 $codecocontdetail->NO_SEGEL = $container->NOSEGEL;
@@ -1182,7 +1182,7 @@ class FclController extends Controller
                 $codecocontdetail->PEL_MUAT = $container->PEL_MUAT;
                 $codecocontdetail->PEL_TRANSIT = $container->PEL_TRANSIT;
                 $codecocontdetail->PEL_BONGKAR = $container->PEL_BONGKAR;
-                $codecocontdetail->GUDANG_TUJUAN = 'TRMA';
+                $codecocontdetail->GUDANG_TUJUAN = 'PTSG';
                 $codecocontdetail->UID = \Auth::getUser()->name;
                 $codecocontdetail->NOURUT = 1;
                 $codecocontdetail->RESPONSE = '';

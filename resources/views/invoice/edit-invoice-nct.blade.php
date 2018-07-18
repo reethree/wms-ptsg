@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="page-header">
-          PT. Lautan Tirta Transportama
+          PT. Sarana Gemilang
           <small class="pull-right">Date: {{ date('d F, Y') }}</small>
         </h2>
       </div>

@@ -153,11 +153,11 @@
                     <div class="form-group">                       
                         <label class="col-sm-3 control-label">Kode Gudang</label>
                         <div class="col-sm-3">
-                            <input type="text" name="KODE_GUDANG" value="TRMA" class="form-control"  readonly>
+                            <input type="text" name="KODE_GUDANG" value="PTSG" class="form-control"  readonly>
                         </div>
                         <label class="col-sm-2 control-label">Tujuan</label>
                         <div class="col-sm-3">
-                            <input type="text" name="GUDANG_TUJUAN" value="TRMA" class="form-control"  readonly>
+                            <input type="text" name="GUDANG_TUJUAN" value="PTSG" class="form-control"  readonly>
                         </div>
                     </div>
                     <div class="form-group">

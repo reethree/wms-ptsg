@@ -198,7 +198,7 @@
                 <td><b>{{$invoice->officer}}</b></td>
             </tr>
             <tr>
-                <td><b>Lautan Tirta Transportama</b></td>
+                <td><b>PT. Sarana Gemilang</b></td>
             </tr>
         </table>
     </div>

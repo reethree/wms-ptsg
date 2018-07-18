@@ -393,12 +393,12 @@ class ManifestController extends Controller
                     $coarikmsdetail->REF_NUMBER = $reff_number;
                     $coarikmsdetail->NOTALLY = $data->NOTALLY;
                     $coarikmsdetail->KD_DOK = 5;
-                    $coarikmsdetail->KD_TPS = 'TRMA';
+                    $coarikmsdetail->KD_TPS = 'PTSG';
                     $coarikmsdetail->NM_ANGKUT = $data->VESSEL;
                     $coarikmsdetail->NO_VOY_FLIGHT = $data->VOY;
                     $coarikmsdetail->CALL_SIGN = $data->CALL_SIGN;
                     $coarikmsdetail->TGL_TIBA = (!empty($data->ETA) ? date('Ymd', strtotime($data->ETA)) : '');
-                    $coarikmsdetail->KD_GUDANG = 'TRMA';
+                    $coarikmsdetail->KD_GUDANG = 'PTSG';
                     $coarikmsdetail->NO_BL_AWB = $data->NOHBL;
                     $coarikmsdetail->TGL_BL_AWB = (!empty($data->TGL_HBL) ? date('Ymd', strtotime($data->TGL_HBL)) : '');
                     $coarikmsdetail->NO_MASTER_BL_AWB = $data->NOMBL;
@@ -423,7 +423,7 @@ class ManifestController extends Controller
                     $coarikmsdetail->PEL_MUAT = $data->PEL_MUAT;
                     $coarikmsdetail->PEL_TRANSIT = $data->PEL_TRANSIT;
                     $coarikmsdetail->PEL_BONGKAR = $data->PEL_BONGKAR;
-                    $coarikmsdetail->GUDANG_TUJUAN = 'TRMA';
+                    $coarikmsdetail->GUDANG_TUJUAN = 'PTSG';
                     $coarikmsdetail->UID = \Auth::getUser()->name;
                     $coarikmsdetail->RESPONSE = '';
                     $coarikmsdetail->STATUS_TPS = 1;

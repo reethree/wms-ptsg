@@ -76,7 +76,7 @@
               </tr>
               <tr>
                   <td><b>Tempat Penumpukan</b></td>
-                  <td>:&nbsp;&nbsp;&nbsp;&nbsp;Gudang Lautan Tirta Transportama</td>
+                  <td>:&nbsp;&nbsp;&nbsp;&nbsp;Gudang PT. Sarana Gemilang</td>
                   <td><b>No. Invoice</b></td>
                   <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
                   <td>{{ $invoice->no_invoice }}</td>
