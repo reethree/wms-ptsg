@@ -22,8 +22,8 @@ class PengirimanController extends Controller
         parent::__construct();
 
         $this->wsdl = 'https://tpsonline.beacukai.go.id/tps/service.asmx?WSDL';
-        $this->user = 'SGL3';
-        $this->password = 'SGL312345678';
+        $this->user = 'PTSG';
+        $this->password = 'PTSG12345678';
         $this->kode = 'SGL3';
     }
     /**
@@ -190,7 +190,7 @@ class PengirimanController extends Controller
         $reff_number = $this->getReffNumber();
         
         $lapYor->REF_NUMBER = $reff_number;
-        $lapYor->KD_TPS = 'SGL3';
+        $lapYor->KD_TPS = 'PTSG';
         $lapYor->KD_GUDANG = 'SGL3';
         $lapYor->TGL_LAPORAN = date('Ymd', strtotime($request->TGL_LAPORAN));
         $lapYor->RESPONSE = 'Belum Upload';
