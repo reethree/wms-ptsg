@@ -1080,7 +1080,7 @@ class FclController extends Controller
                 $coaricontdetail->NOURUT = 1;
                 $coaricontdetail->RESPONSE = '';
                 $coaricontdetail->STATUS_TPS = 1;
-                $coaricontdetail->KODE_KANTOR = '040300';
+                $coaricontdetail->KODE_KANTOR = '010700';
                 $coaricontdetail->NO_DAFTAR_PABEAN = $container->NO_DAFTAR_PABEAN;
                 $coaricontdetail->TGL_DAFTAR_PABEAN = (!empty($container->TGL_DAFTAR_PABEAN) ? date('Ymd', strtotime($container->TGL_DAFTAR_PABEAN)) : '');
                 $coaricontdetail->NO_SEGEL_BC = '';
@@ -1187,7 +1187,7 @@ class FclController extends Controller
                 $codecocontdetail->NOURUT = 1;
                 $codecocontdetail->RESPONSE = '';
                 $codecocontdetail->STATUS_TPS = 1;
-                $codecocontdetail->KODE_KANTOR = '040300';
+                $codecocontdetail->KODE_KANTOR = '010700';
                 $codecocontdetail->NO_DAFTAR_PABEAN = (!empty($container->NO_PIB) ? $container->NO_PIB : '');
                 $codecocontdetail->TGL_DAFTAR_PABEAN = (!empty($container->TGL_PIB) ? date('Ymd', strtotime($container->TGL_PIB)) : '');
                 $codecocontdetail->NO_SEGEL_BC = '';

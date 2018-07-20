@@ -1169,7 +1169,7 @@ class LclController extends Controller
                 $coaricontdetail->NOURUT = 1;
                 $coaricontdetail->RESPONSE = '';
                 $coaricontdetail->STATUS_TPS = '';
-                $coaricontdetail->KODE_KANTOR = '040300';
+                $coaricontdetail->KODE_KANTOR = '010700';
                 $coaricontdetail->NO_DAFTAR_PABEAN = '';
                 $coaricontdetail->TGL_DAFTAR_PABEAN = '';
                 $coaricontdetail->NO_SEGEL_BC = '';
@@ -1274,7 +1274,7 @@ class LclController extends Controller
                 $codecocontdetail->NOURUT = 1;
                 $codecocontdetail->RESPONSE = '';
                 $codecocontdetail->STATUS_TPS = '';
-                $codecocontdetail->KODE_KANTOR = '040300';
+                $codecocontdetail->KODE_KANTOR = '010700';
                 $codecocontdetail->NO_DAFTAR_PABEAN = '';
                 $codecocontdetail->TGL_DAFTAR_PABEAN = '';
                 $codecocontdetail->NO_SEGEL_BC = '';
@@ -1843,7 +1843,7 @@ class LclController extends Controller
                 $codecokmsdetail->RESPONSE = '';
                 $codecokmsdetail->STATUS_TPS = 1;
                 $codecokmsdetail->NOURUT = 1;
-                $codecokmsdetail->KODE_KANTOR = '040300';
+                $codecokmsdetail->KODE_KANTOR = '010700';
                 $codecokmsdetail->NO_DAFTAR_PABEAN = '';
                 $codecokmsdetail->TGL_DAFTAR_PABEAN = '';
                 $codecokmsdetail->NO_SEGEL_BC = '';

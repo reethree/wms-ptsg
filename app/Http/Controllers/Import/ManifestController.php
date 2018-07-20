@@ -428,7 +428,7 @@ class ManifestController extends Controller
                     $coarikmsdetail->RESPONSE = '';
                     $coarikmsdetail->STATUS_TPS = 1;
                     $coarikmsdetail->NOURUT = $nourut;
-                    $coarikmsdetail->KODE_KANTOR = '040300';
+                    $coarikmsdetail->KODE_KANTOR = '010700';
                     $coarikmsdetail->NO_DAFTAR_PABEAN = '';
                     $coarikmsdetail->TGL_DAFTAR_PABEAN = '';
                     $coarikmsdetail->NO_SEGEL_BC = '';
