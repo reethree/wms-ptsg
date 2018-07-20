@@ -30,7 +30,7 @@
 <body class="hold-transition login-page skin-red-light">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>LTT</b>WMS</a>
+    <a href="#"><b>PTSG</b>WMS</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
