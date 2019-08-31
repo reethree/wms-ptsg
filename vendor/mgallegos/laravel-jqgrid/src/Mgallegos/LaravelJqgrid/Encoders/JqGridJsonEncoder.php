@@ -46,7 +46,7 @@ class JqGridJsonEncoder implements RequestedDataInterface {
 	 * @return string
 	 *	String of a jqGrid compatible data format: xml, json, jsonp, array, xmlstring, jsonstring.
 	 */
-	public function encodeRequestedData(RepositoryInterface $Repository,  $postedData)
+	public function encodeRequestedData(RepositoryInterface $Repository,  $postedData, $encodeRowsToUtf8 = false)
 	{
 		// $page = $postedData['page']; // get the requested page
 		// $limit = $postedData['rows']; // get how many rows we want to have into the grid
@@ -249,7 +249,10 @@ class JqGridJsonEncoder implements RequestedDataInterface {
 		{
 			$rows = $Repository->getRows($limit, $start, $sidx, $sord, $filters['rules'], $nodeId, $nodeLevel, $exporting);
 
-			//$rows = self::utf8ize($rows);
+			if($encodeRowsToUtf8)
+			{
+				$rows = self::utf8ize($rows);
+			}
 
 			if($count < count($rows))
 			{
@@ -627,7 +630,10 @@ class JqGridJsonEncoder implements RequestedDataInterface {
 
 					foreach ($modelNumberFormatters as $columnName => $format)
 					{
-						$columnFormats[$this->numToLetter($columnsPositions[$columnName], true)] = $format;
+						if(isset($columnsPositions[$columnName]))
+						{
+							$columnFormats[$this->numToLetter($columnsPositions[$columnName], true)] = $format;
+						}
 					}
 
 					$Sheet->setColumnFormat($columnFormats);
